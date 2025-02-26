@@ -1,0 +1,82 @@
+*
+{
+    padding: 0;
+    margin: 0; 
+    border-radius: 12px;
+}
+
+#wrapper { 
+    display: grid;
+    grid-template-columns: 40% 1fr 10% 10%;
+    grid-template-rows: 10vh 40vh 40vh 10vh;
+    grid-template-areas: 
+    'hd hd hd nv'
+    'sc1 i1 as1 as1' 
+    'sc1 i2 as1 as1'
+    'ft ft ft ft';
+    gap: 8px;
+    height: 100vh;
+    background-color: whitesmoke; 
+    padding: 3px;
+}
+
+header { 
+    grid-area: hd;
+    background-color: #8BC34A;
+    display: flex; 
+    font-size: 100px;
+    align-items: center;
+    justify-items: start;
+}
+
+#asidea1 { 
+    grid-area: as1;
+    background-color: #8BC34A;
+    display: grid;  
+    
+}
+
+#sections1 {
+    grid-area: sc1; 
+    background-color: #ffffff;
+    display: grid; 
+    font-size: 24px; 
+    align-content: center;
+    justify-self: center; 
+    justify-content: space-between; 
+    padding: 20px;
+}
+
+nav {
+    grid-area: nv;
+    background-color: #8BC34A;
+    display: grid;
+}
+
+footer {
+    grid-area: ft;
+    background-color: #8BC34A; 
+    display: grid;
+}
+
+#imgbild1 { 
+    grid-area: i1;
+    display: grid;
+    background-image: url('/img/micheile-henderson-B2tKxL9KVqA-unsplash.jpg');
+    
+}
+
+img#bild2 {
+    grid-area: i2;
+    display: grid;
+    background-image: url(/img/toa-heftiba-Kx8DDqb6Wbw-unsplash.jpg); 
+}
+
+h1
+{
+    color: red;
+    font-size: 3rem;
+} 
+
+
+
